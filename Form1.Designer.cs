@@ -32,15 +32,17 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.leftFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.profileOvalPictureBox = new OvalPictureBox();
             this.userNameLabel = new System.Windows.Forms.Label();
             this.homeButton = new System.Windows.Forms.Button();
             this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.profileOvalPictureBox = new OvalPictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.postUI1 = new B19_Ex01_Matan_311116313_Moshe_305097453.PostUI();
+            this.submitTexBox1 = new B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox();
             this.leftFlowLayoutPanel.SuspendLayout();
-            this.mainFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
+            this.topFlowLayoutPanel.SuspendLayout();
+            this.mainFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // leftFlowLayoutPanel
@@ -57,6 +59,19 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.leftFlowLayoutPanel.Size = new System.Drawing.Size(200, 505);
             this.leftFlowLayoutPanel.TabIndex = 10;
             this.leftFlowLayoutPanel.WrapContents = false;
+            // 
+            // profileOvalPictureBox
+            // 
+            this.profileOvalPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.profileOvalPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.profileOvalPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profileOvalPictureBox.Image")));
+            this.profileOvalPictureBox.Location = new System.Drawing.Point(50, 10);
+            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(11, 10, 11, 0);
+            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
+            this.profileOvalPictureBox.Size = new System.Drawing.Size(100, 100);
+            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.profileOvalPictureBox.TabIndex = 10;
+            this.profileOvalPictureBox.TabStop = false;
             // 
             // userNameLabel
             // 
@@ -95,6 +110,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             // 
             this.topFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.topFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.topFlowLayoutPanel.Controls.Add(this.submitTexBox1);
             this.topFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topFlowLayoutPanel.Location = new System.Drawing.Point(200, 0);
             this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -106,7 +122,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             // 
             this.mainFlowLayoutPanel.AutoScroll = true;
             this.mainFlowLayoutPanel.BackColor = System.Drawing.Color.White;
-            this.mainFlowLayoutPanel.Controls.Add(this.button1);
+            this.mainFlowLayoutPanel.Controls.Add(this.postUI1);
             this.mainFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.mainFlowLayoutPanel.Location = new System.Drawing.Point(200, 97);
@@ -116,29 +132,25 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.mainFlowLayoutPanel.TabIndex = 2;
             this.mainFlowLayoutPanel.WrapContents = false;
             // 
-            // profileOvalPictureBox
+            // postUI1
             // 
-            this.profileOvalPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.profileOvalPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.profileOvalPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profileOvalPictureBox.Image")));
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(50, 10);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(11, 10, 11, 0);
-            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(100, 100);
-            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profileOvalPictureBox.TabIndex = 10;
-            this.profileOvalPictureBox.TabStop = false;
+            this.postUI1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.postUI1.AutoSize = true;
+            this.postUI1.Location = new System.Drawing.Point(3, 3);
+            this.postUI1.MinimumSize = new System.Drawing.Size(600, 100);
+            this.postUI1.Name = "postUI1";
+            this.postUI1.Padding = new System.Windows.Forms.Padding(3);
+            this.postUI1.Size = new System.Drawing.Size(600, 100);
+            this.postUI1.TabIndex = 0;
             // 
-            // button1
+            // submitTexBox1
             // 
-            this.button1.AutoSize = true;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(474, 27);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.submitTexBox1.Location = new System.Drawing.Point(3, 3);
+            this.submitTexBox1.Name = "submitTexBox1";
+            this.submitTexBox1.Size = new System.Drawing.Size(582, 42);
+            this.submitTexBox1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -154,9 +166,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.Text = "Form1";
             this.leftFlowLayoutPanel.ResumeLayout(false);
             this.leftFlowLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
+            this.topFlowLayoutPanel.ResumeLayout(false);
             this.mainFlowLayoutPanel.ResumeLayout(false);
             this.mainFlowLayoutPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -169,7 +182,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.Button homeButton;
         private OvalPictureBox profileOvalPictureBox;
-        private System.Windows.Forms.Button button1;
+        private PostUI postUI1;
+        private SubmitTexBox submitTexBox1;
     }
 }
 

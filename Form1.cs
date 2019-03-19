@@ -17,7 +17,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         public Form1()
         {
             InitializeComponent();
-            //loginAndInit();
+            loginAndInit();
         }
         private User m_LoggedInUser;
 
@@ -27,7 +27,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
             /// Use the FacebookService.Login method to display the login form to any user who wish to use this application.
             /// You can then save the result.AccessToken for future auto-connect to this user:
-            LoginResult result = FacebookService.Login("335289707098224", /// (desig patter's "Design Patterns Course App 2.4" app)
+            LoginResult result = FacebookService.Login("2069724039730421", /// (desig patter's "Design Patterns Course App 2.4" app)
 
                 "public_profile",
                 "email",
@@ -118,7 +118,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void loadWallPosts(User i_User)
         {
-            foreach (Post post in i_User.WallPosts)
+            foreach (Post post in i_User.NewsFeed)
             {
                 PostUI newPostUI = new PostUI(post);
                 mainFlowLayoutPanel.Controls.Add(newPostUI);
