@@ -13,4 +13,6 @@ C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Ma
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostDetails.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox.resources
+C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumUI.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
+C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDetails.resources

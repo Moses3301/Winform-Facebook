@@ -111,6 +111,9 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 case "HOME":
                     loadWallPosts(m_LoggedInUser);
                     break;
+                case "ALBUMS":
+                    loadAlbums(m_LoggedInUser);
+                    break;
                 default:
                     break;
             }
@@ -124,7 +127,14 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 mainFlowLayoutPanel.Controls.Add(newPostUI);
             }
         }
-
+        private void loadAlbums(User i_User)
+        {
+            foreach (Album album in i_User.Albums)
+            {
+                AlbumUI newAlbumUI = new AlbumUI(album);
+                mainFlowLayoutPanel.Controls.Add(newAlbumUI);
+            }
+        }
         private void fetchUserInfo()
         {
             profileOvalPictureBox.LoadAsync(m_LoggedInUser.PictureNormalURL);
