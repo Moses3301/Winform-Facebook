@@ -22,10 +22,13 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchAlbumDetails()
         {
-            detailsLabel.Text = m_Album.ToString();
+            detailsLabel.Text = m_Album.Name + m_Album.CreatedTime;
             thumPictureBox.LoadAsync(m_Album.PictureAlbumURL);
+            foreach (Photo photo in m_Album.Photos)
+            {
+                mainFlowLayoutPanel.Controls.Add(new PhotoUI(photo));
+            }
         }
-
         Album m_Album;
     }
 }

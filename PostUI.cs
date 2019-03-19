@@ -55,6 +55,14 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 }
                 
             }
+            Photo postPhoto = m_Post as Photo;
+            if (postPhoto != null)
+            {
+                   PictureBox pic = new PictureBox();
+                   pic.LoadAsync(postPhoto.PictureThumbURL);
+                   pic.SizeMode = PictureBoxSizeMode.AutoSize;
+                   bodyFlowLayoutPanel.Controls.Add(pic);
+            }
             LikesLabel.Text = m_Post.LikedBy.Count.ToString();
             commentsLabel.Text = m_Post.Comments.Count.ToString();
             m_Post.PropertyChanged += Post_Change;
