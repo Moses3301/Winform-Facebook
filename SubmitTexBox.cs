@@ -30,7 +30,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 SubmitClicked(textBox.Text);
             }
         }
-
+        public Button SubmitButton { get { return submitButton; }  }
+        public Button TextBox { get { return submitButton; } }
         private void submitButton_Click(object sender, EventArgs e)
         {
             onSubmitClick();

@@ -17,7 +17,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         {
             InitializeComponent();
             m_Post = i_Post;
-            submitTexBox.SubmitClicked += m_Post.Comment;
+            submitTexBox.SubmitButton.Click += new EventHandler(comment_onClick);
             fetchComments();
         }
         PostedItem m_Post;
@@ -32,6 +32,9 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 mainFlowLayoutPanel.Controls.Add(newComment);
             }
         }
-
+        private void comment_onClick(object sender, EventArgs args)
+        {
+            m_Post.Comment(submitTexBox.TextBox.Text);
+        }
     }
 }
