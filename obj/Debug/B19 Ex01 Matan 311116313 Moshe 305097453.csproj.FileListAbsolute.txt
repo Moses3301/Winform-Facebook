@@ -3,7 +3,6 @@ C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Ma
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\bin\Debug\Facebook.dll
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\bin\Debug\FbGraphApiWrapper.dll
-C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Form1.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.GenerateResource.cache
@@ -17,3 +16,5 @@ C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Ma
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDetails.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoUI.resources
 C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
+C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserForm.resources
+C:\Users\Moses\source\repos\B19 Ex01 Matan 311116313 Moshe 305097453\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserUI.resources

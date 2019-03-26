@@ -79,11 +79,11 @@
     <Compile Include="AlbumUI.Designer.cs">
       <DependentUpon>AlbumUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OvalPictureBox .cs">
       <SubType>Component</SubType>
@@ -114,14 +114,20 @@
     <Compile Include="SubmitTexBox.Designer.cs">
       <DependentUpon>SubmitTexBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUI.Designer.cs">
+      <DependentUpon>UserUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AlbumDetails.resx">
       <DependentUpon>AlbumDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AlbumUI.resx">
       <DependentUpon>AlbumUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhotoUI.resx">
       <DependentUpon>PhotoUI.cs</DependentUpon>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="SubmitTexBox.resx">
       <DependentUpon>SubmitTexBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUI.resx">
+      <DependentUpon>UserUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
