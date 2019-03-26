@@ -17,7 +17,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
     public partial class AlbumDownloader : Form
     {
         private ICollection<Album> m_Albums;
-        private string imageUrl;
 
         public AlbumDownloader(ICollection<Album> i_Albums)
         {
