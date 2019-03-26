@@ -36,10 +36,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.commentsPictureBox = new System.Windows.Forms.PictureBox();
             this.commentsLabel = new System.Windows.Forms.Label();
             this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.profileOvalPictureBox = new OvalPictureBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
             this.bodyFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.profileOvalPictureBox = new OvalPictureBox();
             this.btmFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LikePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commentsPictureBox)).BeginInit();
@@ -113,6 +113,18 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.topFlowLayoutPanel.Size = new System.Drawing.Size(1108, 43);
             this.topFlowLayoutPanel.TabIndex = 1;
             // 
+            // profileOvalPictureBox
+            // 
+            this.profileOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
+            this.profileOvalPictureBox.Image = global::B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.facebook_profile_photo;
+            this.profileOvalPictureBox.Location = new System.Drawing.Point(5, 5);
+            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(5);
+            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
+            this.profileOvalPictureBox.Size = new System.Drawing.Size(44, 38);
+            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.profileOvalPictureBox.TabIndex = 0;
+            this.profileOvalPictureBox.TabStop = false;
+            // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
@@ -127,6 +139,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.nameLabel.TabIndex = 1;
             this.nameLabel.Text = "Firstname Lastname";
             this.nameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // dateLabel
             // 
@@ -150,18 +163,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.bodyFlowLayoutPanel.TabIndex = 2;
             this.bodyFlowLayoutPanel.WrapContents = false;
             this.bodyFlowLayoutPanel.Click += new System.EventHandler(this.bodyFlowLayoutPanel_Click);
-            // 
-            // profileOvalPictureBox
-            // 
-            this.profileOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
-            this.profileOvalPictureBox.Image = global::B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.facebook_profile_photo;
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(5, 5);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(5);
-            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(44, 38);
-            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profileOvalPictureBox.TabIndex = 0;
-            this.profileOvalPictureBox.TabStop = false;
             // 
             // PostUI
             // 

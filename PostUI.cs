@@ -89,5 +89,11 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             PostDetails postDetails = new PostDetails(m_Post);
             postDetails.Show();
         }
+
+        private void nameLabel_Click(object sender, EventArgs e)
+        {
+            UserForm newWindow = new UserForm(m_User);
+            newWindow.Show();
+        }
     }
 }
