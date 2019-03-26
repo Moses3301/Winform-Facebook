@@ -29,5 +29,11 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         }
 
         User User { get { return m_User; } }
+
+        private void UserUI_Click(object sender, EventArgs e)
+        {
+            UserForm newWindow = new UserForm(m_User);
+            newWindow.Show();
+        }
     }
 }

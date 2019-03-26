@@ -66,14 +66,17 @@
             // 
             // submitButton
             // 
+            this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(157)))), ((int)(((byte)(195)))));
             this.submitButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.submitButton.Enabled = false;
+            this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitButton.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.submitButton.Location = new System.Drawing.Point(0, 0);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(118, 39);
             this.submitButton.TabIndex = 0;
             this.submitButton.Text = "Submit";
-            this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.UseVisualStyleBackColor = false;
             this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // SubmitTexBox

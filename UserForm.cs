@@ -19,7 +19,14 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             InitializeComponent();
             m_User = i_User;
             fetchUserInfo();
+            postSubmitTexBox.SubmitButton.Click += new EventHandler(post_Click);
         }
+
+        private void post_Click(object sender, EventArgs e)
+        {
+            m_User.PostStatus(postSubmitTexBox.TextBox.Text);
+        }
+
         private User m_User;
 
         private void menuButton_Click(object sender, EventArgs e)
@@ -51,6 +58,15 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             }
         }
 
+        private void loadFriends(User i_User)
+        {
+            foreach (User friend in i_User.Friends)
+            {
+                UserUI newUserUI = new UserUI(friend);
+                mainFlowLayoutPanel.Controls.Add(newUserUI);
+            }
+        }
+
         private void loadWallPosts(User i_User)
         {
             foreach (Post post in i_User.NewsFeed)
@@ -71,6 +87,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         {
             profileOvalPictureBox.LoadAsync(m_User.PictureNormalURL);
             userNameLabel.Text = m_User.Name;
+            this.Text = m_User.Name;
         }
     }
 }

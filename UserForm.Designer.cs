@@ -36,10 +36,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.userNameLabel = new System.Windows.Forms.Label();
             this.homeButton = new System.Windows.Forms.Button();
             this.albumButton = new System.Windows.Forms.Button();
-            this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.submitTexBox1 = new B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox();
-            this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.friendsButton = new System.Windows.Forms.Button();
+            this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.postSubmitTexBox = new B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox();
+            this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.leftFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
             this.topFlowLayoutPanel.SuspendLayout();
@@ -127,38 +127,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.albumButton.UseVisualStyleBackColor = false;
             this.albumButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
-            // topFlowLayoutPanel
-            // 
-            this.topFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.topFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.topFlowLayoutPanel.Controls.Add(this.submitTexBox1);
-            this.topFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topFlowLayoutPanel.Location = new System.Drawing.Point(200, 0);
-            this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.topFlowLayoutPanel.Name = "topFlowLayoutPanel";
-            this.topFlowLayoutPanel.Size = new System.Drawing.Size(871, 97);
-            this.topFlowLayoutPanel.TabIndex = 1;
-            // 
-            // submitTexBox1
-            // 
-            this.submitTexBox1.Location = new System.Drawing.Point(3, 3);
-            this.submitTexBox1.Name = "submitTexBox1";
-            this.submitTexBox1.Size = new System.Drawing.Size(582, 42);
-            this.submitTexBox1.TabIndex = 0;
-            // 
-            // mainFlowLayoutPanel
-            // 
-            this.mainFlowLayoutPanel.AutoScroll = true;
-            this.mainFlowLayoutPanel.BackColor = System.Drawing.Color.White;
-            this.mainFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.mainFlowLayoutPanel.Location = new System.Drawing.Point(200, 97);
-            this.mainFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.mainFlowLayoutPanel.Name = "mainFlowLayoutPanel";
-            this.mainFlowLayoutPanel.Size = new System.Drawing.Size(871, 408);
-            this.mainFlowLayoutPanel.TabIndex = 2;
-            this.mainFlowLayoutPanel.WrapContents = false;
-            // 
             // friendsButton
             // 
             this.friendsButton.AutoSize = true;
@@ -176,6 +144,39 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.friendsButton.Tag = "FRIENDS";
             this.friendsButton.Text = "Friends";
             this.friendsButton.UseVisualStyleBackColor = false;
+            this.friendsButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // topFlowLayoutPanel
+            // 
+            this.topFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.topFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.topFlowLayoutPanel.Controls.Add(this.postSubmitTexBox);
+            this.topFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topFlowLayoutPanel.Location = new System.Drawing.Point(200, 0);
+            this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topFlowLayoutPanel.Name = "topFlowLayoutPanel";
+            this.topFlowLayoutPanel.Size = new System.Drawing.Size(871, 97);
+            this.topFlowLayoutPanel.TabIndex = 1;
+            // 
+            // postSubmitTexBox
+            // 
+            this.postSubmitTexBox.Location = new System.Drawing.Point(3, 3);
+            this.postSubmitTexBox.Name = "postSubmitTexBox";
+            this.postSubmitTexBox.Size = new System.Drawing.Size(582, 42);
+            this.postSubmitTexBox.TabIndex = 0;
+            // 
+            // mainFlowLayoutPanel
+            // 
+            this.mainFlowLayoutPanel.AutoScroll = true;
+            this.mainFlowLayoutPanel.BackColor = System.Drawing.Color.White;
+            this.mainFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.mainFlowLayoutPanel.Location = new System.Drawing.Point(200, 97);
+            this.mainFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mainFlowLayoutPanel.Name = "mainFlowLayoutPanel";
+            this.mainFlowLayoutPanel.Size = new System.Drawing.Size(871, 408);
+            this.mainFlowLayoutPanel.TabIndex = 2;
+            this.mainFlowLayoutPanel.WrapContents = false;
             // 
             // UserForm
             // 
@@ -188,7 +189,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserForm";
-            this.Text = "UserForm";
             this.leftFlowLayoutPanel.ResumeLayout(false);
             this.leftFlowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
@@ -205,7 +205,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.Button homeButton;
         private OvalPictureBox profileOvalPictureBox;
-        private SubmitTexBox submitTexBox1;
+        private SubmitTexBox postSubmitTexBox;
         private System.Windows.Forms.Button albumButton;
         private System.Windows.Forms.Button friendsButton;
     }

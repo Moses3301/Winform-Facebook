@@ -19,7 +19,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             m_Post = i_Post;
             fetchPostInfo();
         }
-        public PostUI()
+        private PostUI()
         {
             InitializeComponent();
         }
@@ -32,10 +32,16 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private void fetchPostInfo()
         {
             User aouther = m_Post.From;
-            profileOvalPictureBox.LoadAsync(aouther.PictureNormalURL);
-            nameLabel.Text = aouther.Name;
-            dateLabel.Text = m_Post.CreatedTime.ToString();
-
+            if (aouther == null)
+            {
+                topFlowLayoutPanel.Hide();
+            }
+            else
+            {
+                profileOvalPictureBox.LoadAsync(aouther.PictureNormalURL);
+                nameLabel.Text = aouther.Name;
+                dateLabel.Text = m_Post.CreatedTime.ToString();
+            }   
             if (!string.IsNullOrEmpty(m_Post.Message))
             {
                 Label msg = new Label();
@@ -92,7 +98,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void nameLabel_Click(object sender, EventArgs e)
         {
-            UserForm newWindow = new UserForm(m_User);
+            UserForm newWindow = new UserForm(m_Post.From);
             newWindow.Show();
         }
     }
