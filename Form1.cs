@@ -138,7 +138,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private void fetchUserInfo()
         {
             profileOvalPictureBox.LoadAsync(m_LoggedInUser.PictureNormalURL);
-            userNameLabel.Text = m_LoggedInUser.Name;
+            userNameLabel.Text = m_LoggedInUser.OnlineStatus.ToString();
         }
     }
 }
