@@ -32,6 +32,7 @@
             this.albumNameLabel = new System.Windows.Forms.Label();
             this.coverPictureBox = new System.Windows.Forms.PictureBox();
             this.ItemsLabel = new System.Windows.Forms.Label();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             this.topFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.coverPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -77,10 +78,20 @@
             this.ItemsLabel.TabIndex = 2;
             this.ItemsLabel.Text = "0 Items";
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Location = new System.Drawing.Point(183, 187);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(18, 17);
+            this.checkBox.TabIndex = 3;
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // AlbumUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.ItemsLabel);
             this.Controls.Add(this.coverPictureBox);
             this.Controls.Add(this.topFlowLayoutPanel);
@@ -100,5 +111,6 @@
         private System.Windows.Forms.Label albumNameLabel;
         private System.Windows.Forms.PictureBox coverPictureBox;
         private System.Windows.Forms.Label ItemsLabel;
+        private System.Windows.Forms.CheckBox checkBox;
     }
 }

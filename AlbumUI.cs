@@ -20,6 +20,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             fetchAlbumInfo();
         }
         Album m_Album;
+        public Album Album { get { return m_Album; } }
+        public CheckBox CheckBox { get { return checkBox; } }
         private void fetchAlbumInfo()
         {
             coverPictureBox.LoadAsync(m_Album.PictureAlbumURL);

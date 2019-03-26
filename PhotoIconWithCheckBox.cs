@@ -11,27 +11,21 @@ using FacebookWrapper.ObjectModel;
 
 namespace B19_Ex01_Matan_311116313_Moshe_305097453
 {
-    public partial class PhotoUI : UserControl
+    public partial class PhotoIconWithCheckBox : UserControl
     {
-        public PhotoUI(Photo i_Photo)
+        public PhotoIconWithCheckBox(Photo i_Photo)
         {
             InitializeComponent();
             m_Photo = i_Photo;
-            fetchPhotoDetails();
-        }
-
-        private void fetchPhotoDetails()
-        {
-            pictureBox.LoadAsync(m_Photo.PictureNormalURL);
+            fetchPhotoInfo();
         }
 
         Photo m_Photo;
-        private void pictureBox_Click(object sender, EventArgs e)
+        public CheckBox CheckBox { get { return checkBox; } }
+        public Photo Photo { get { return m_Photo; } }
+        private void fetchPhotoInfo()
         {
-            PostDetails postDetails = new PostDetails(m_Photo);
-            postDetails.Show();
+            pictureBox.LoadAsync(m_Photo.PictureNormalURL);
         }
-
-
     }
 }

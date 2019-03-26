@@ -19,12 +19,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             InitializeComponent();
             m_User = i_User;
             fetchUserInfo();
-            postSubmitTexBox.SubmitButton.Click += new EventHandler(post_Click);
-        }
-
-        private void post_Click(object sender, EventArgs e)
-        {
-            m_User.PostStatus(postSubmitTexBox.TextBox.Text);
         }
 
         private User m_User;
@@ -41,6 +35,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             Button btn = (Button)sender;
             btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(157)))), ((int)(((byte)(195)))));
             mainFlowLayoutPanel.Controls.Clear();
+            topFlowLayoutPanel.Controls.Clear();
             string tag = btn.Tag.ToString();
             switch (tag)
             {
@@ -48,7 +43,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                     loadWallPosts(m_User);
                     break;
                 case "ALBUMS":
-                    loadAlbums(m_User);
+                    loadAlbumsScreen();
                     break;
                 case "FRIENDS":
                     loadFriends(m_User);
@@ -56,6 +51,44 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 default:
                     break;
             }
+        }
+
+        private void loadAlbumsScreen()
+        {
+            loadAlbums(m_User);
+            Button downladBtn = newButton("Download Albums");
+            downladBtn.Click += new EventHandler(saveAlbums_Click);
+            topFlowLayoutPanel.Controls.Add(downladBtn);
+        }
+        private Button newButton(string i_text)
+        {
+            Button button = new Button();
+            button.Text = i_text;
+            button.AutoSize = true;
+            button.BackColor = System.Drawing.Color.Blue;
+            button.FlatAppearance.BorderSize = 0;
+            button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button.ForeColor = System.Drawing.Color.Cornsilk;
+            button.Text = "Download Albums";
+            return button;
+        }
+        private void saveAlbums_Click(object sender, EventArgs e)
+        {
+            List<Album> albums = new List<Album>();
+            foreach (Control control in mainFlowLayoutPanel.Controls)
+            {
+                AlbumUI album = control as AlbumUI;
+                if (album != null)
+                {
+                    if (album.CheckBox.Checked)
+                    {
+                        albums.Add(album.Album);
+                    }
+                }
+            }
+            AlbumDownloader albumDownloader = new AlbumDownloader(albums);
+            albumDownloader.Show();
         }
 
         private void loadFriends(User i_User)

@@ -73,11 +73,23 @@
     <Compile Include="AlbumDetails.Designer.cs">
       <DependentUpon>AlbumDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlbumDownloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumDownloader.Designer.cs">
+      <DependentUpon>AlbumDownloader.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlbumUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AlbumUI.Designer.cs">
       <DependentUpon>AlbumUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoIconWithCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhotoIconWithCheckBox.Designer.cs">
+      <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
     </Compile>
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
@@ -123,8 +135,14 @@
     <EmbeddedResource Include="AlbumDetails.resx">
       <DependentUpon>AlbumDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlbumDownloader.resx">
+      <DependentUpon>AlbumDownloader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlbumUI.resx">
       <DependentUpon>AlbumUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoIconWithCheckBox.resx">
+      <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>

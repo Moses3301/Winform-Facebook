@@ -38,11 +38,9 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.albumButton = new System.Windows.Forms.Button();
             this.friendsButton = new System.Windows.Forms.Button();
             this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.postSubmitTexBox = new B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox();
             this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.leftFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
-            this.topFlowLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // leftFlowLayoutPanel
@@ -150,20 +148,12 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             // 
             this.topFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.topFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.topFlowLayoutPanel.Controls.Add(this.postSubmitTexBox);
             this.topFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topFlowLayoutPanel.Location = new System.Drawing.Point(200, 0);
             this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.topFlowLayoutPanel.Name = "topFlowLayoutPanel";
             this.topFlowLayoutPanel.Size = new System.Drawing.Size(871, 97);
             this.topFlowLayoutPanel.TabIndex = 1;
-            // 
-            // postSubmitTexBox
-            // 
-            this.postSubmitTexBox.Location = new System.Drawing.Point(3, 3);
-            this.postSubmitTexBox.Name = "postSubmitTexBox";
-            this.postSubmitTexBox.Size = new System.Drawing.Size(582, 42);
-            this.postSubmitTexBox.TabIndex = 0;
             // 
             // mainFlowLayoutPanel
             // 
@@ -192,7 +182,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.leftFlowLayoutPanel.ResumeLayout(false);
             this.leftFlowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
-            this.topFlowLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -205,7 +194,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.Button homeButton;
         private OvalPictureBox profileOvalPictureBox;
-        private SubmitTexBox postSubmitTexBox;
         private System.Windows.Forms.Button albumButton;
         private System.Windows.Forms.Button friendsButton;
     }
