@@ -85,11 +85,29 @@
     <Compile Include="AlbumUI.Designer.cs">
       <DependentUpon>AlbumUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GroupUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GroupUI.Designer.cs">
+      <DependentUpon>GroupUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageUI.Designer.cs">
+      <DependentUpon>PageUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhotoIconWithCheckBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PhotoIconWithCheckBox.Designer.cs">
       <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetails.Designer.cs">
+      <DependentUpon>UserDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
@@ -141,8 +159,17 @@
     <EmbeddedResource Include="AlbumUI.resx">
       <DependentUpon>AlbumUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GroupUI.resx">
+      <DependentUpon>GroupUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageUI.resx">
+      <DependentUpon>PageUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhotoIconWithCheckBox.resx">
       <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetails.resx">
+      <DependentUpon>UserDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm.resx">
       <DependentUpon>UserForm.cs</DependentUpon>

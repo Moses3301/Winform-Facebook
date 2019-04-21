@@ -39,6 +39,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.friendsButton = new System.Windows.Forms.Button();
             this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.pagesButton = new System.Windows.Forms.Button();
+            this.groupsButton = new System.Windows.Forms.Button();
             this.leftFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -51,12 +53,14 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.leftFlowLayoutPanel.Controls.Add(this.homeButton);
             this.leftFlowLayoutPanel.Controls.Add(this.albumButton);
             this.leftFlowLayoutPanel.Controls.Add(this.friendsButton);
+            this.leftFlowLayoutPanel.Controls.Add(this.pagesButton);
+            this.leftFlowLayoutPanel.Controls.Add(this.groupsButton);
             this.leftFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.leftFlowLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.leftFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.leftFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.leftFlowLayoutPanel.Name = "leftFlowLayoutPanel";
-            this.leftFlowLayoutPanel.Size = new System.Drawing.Size(200, 505);
+            this.leftFlowLayoutPanel.Size = new System.Drawing.Size(150, 410);
             this.leftFlowLayoutPanel.TabIndex = 10;
             this.leftFlowLayoutPanel.WrapContents = false;
             // 
@@ -65,10 +69,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.profileOvalPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.profileOvalPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.profileOvalPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profileOvalPictureBox.Image")));
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(50, 10);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(11, 10, 11, 0);
+            this.profileOvalPictureBox.Location = new System.Drawing.Point(37, 8);
+            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(8, 8, 8, 0);
             this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(100, 100);
+            this.profileOvalPictureBox.Size = new System.Drawing.Size(75, 81);
             this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.profileOvalPictureBox.TabIndex = 10;
             this.profileOvalPictureBox.TabStop = false;
@@ -78,11 +82,11 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.userNameLabel.AutoSize = true;
             this.userNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userNameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userNameLabel.Location = new System.Drawing.Point(0, 110);
+            this.userNameLabel.Location = new System.Drawing.Point(0, 89);
             this.userNameLabel.Margin = new System.Windows.Forms.Padding(0);
             this.userNameLabel.Name = "userNameLabel";
-            this.userNameLabel.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
-            this.userNameLabel.Size = new System.Drawing.Size(200, 37);
+            this.userNameLabel.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.userNameLabel.Size = new System.Drawing.Size(150, 29);
             this.userNameLabel.TabIndex = 11;
             this.userNameLabel.Text = "Firstname Lastname";
             this.userNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -96,10 +100,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeButton.ForeColor = System.Drawing.Color.Cornsilk;
-            this.homeButton.Location = new System.Drawing.Point(0, 147);
+            this.homeButton.Location = new System.Drawing.Point(0, 118);
             this.homeButton.Margin = new System.Windows.Forms.Padding(0);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(200, 48);
+            this.homeButton.Size = new System.Drawing.Size(150, 39);
             this.homeButton.TabIndex = 12;
             this.homeButton.Tag = "HOME";
             this.homeButton.Text = global::B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.home;
@@ -115,10 +119,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.albumButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.albumButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.albumButton.ForeColor = System.Drawing.Color.Cornsilk;
-            this.albumButton.Location = new System.Drawing.Point(0, 195);
+            this.albumButton.Location = new System.Drawing.Point(0, 157);
             this.albumButton.Margin = new System.Windows.Forms.Padding(0);
             this.albumButton.Name = "albumButton";
-            this.albumButton.Size = new System.Drawing.Size(200, 48);
+            this.albumButton.Size = new System.Drawing.Size(150, 39);
             this.albumButton.TabIndex = 13;
             this.albumButton.Tag = "ALBUMS";
             this.albumButton.Text = "Albums";
@@ -134,10 +138,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.friendsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.friendsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.friendsButton.ForeColor = System.Drawing.Color.Cornsilk;
-            this.friendsButton.Location = new System.Drawing.Point(0, 243);
+            this.friendsButton.Location = new System.Drawing.Point(0, 196);
             this.friendsButton.Margin = new System.Windows.Forms.Padding(0);
             this.friendsButton.Name = "friendsButton";
-            this.friendsButton.Size = new System.Drawing.Size(200, 48);
+            this.friendsButton.Size = new System.Drawing.Size(150, 39);
             this.friendsButton.TabIndex = 14;
             this.friendsButton.Tag = "FRIENDS";
             this.friendsButton.Text = "Friends";
@@ -149,10 +153,10 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.topFlowLayoutPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.topFlowLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.topFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topFlowLayoutPanel.Location = new System.Drawing.Point(200, 0);
-            this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.topFlowLayoutPanel.Location = new System.Drawing.Point(150, 0);
+            this.topFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.topFlowLayoutPanel.Name = "topFlowLayoutPanel";
-            this.topFlowLayoutPanel.Size = new System.Drawing.Size(871, 97);
+            this.topFlowLayoutPanel.Size = new System.Drawing.Size(653, 79);
             this.topFlowLayoutPanel.TabIndex = 1;
             // 
             // mainFlowLayoutPanel
@@ -161,23 +165,61 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.mainFlowLayoutPanel.BackColor = System.Drawing.Color.White;
             this.mainFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.mainFlowLayoutPanel.Location = new System.Drawing.Point(200, 97);
-            this.mainFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.mainFlowLayoutPanel.Location = new System.Drawing.Point(150, 79);
+            this.mainFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainFlowLayoutPanel.Name = "mainFlowLayoutPanel";
-            this.mainFlowLayoutPanel.Size = new System.Drawing.Size(871, 408);
+            this.mainFlowLayoutPanel.Size = new System.Drawing.Size(653, 331);
             this.mainFlowLayoutPanel.TabIndex = 2;
             this.mainFlowLayoutPanel.WrapContents = false;
             // 
+            // pagesButton
+            // 
+            this.pagesButton.AutoSize = true;
+            this.pagesButton.BackColor = System.Drawing.Color.Transparent;
+            this.pagesButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pagesButton.FlatAppearance.BorderSize = 0;
+            this.pagesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pagesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pagesButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.pagesButton.Location = new System.Drawing.Point(0, 235);
+            this.pagesButton.Margin = new System.Windows.Forms.Padding(0);
+            this.pagesButton.Name = "pagesButton";
+            this.pagesButton.Size = new System.Drawing.Size(150, 39);
+            this.pagesButton.TabIndex = 15;
+            this.pagesButton.Tag = "PAGES";
+            this.pagesButton.Text = "Pages";
+            this.pagesButton.UseVisualStyleBackColor = false;
+            this.pagesButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
+            // groupsButton
+            // 
+            this.groupsButton.AutoSize = true;
+            this.groupsButton.BackColor = System.Drawing.Color.Transparent;
+            this.groupsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupsButton.FlatAppearance.BorderSize = 0;
+            this.groupsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupsButton.ForeColor = System.Drawing.Color.Cornsilk;
+            this.groupsButton.Location = new System.Drawing.Point(0, 274);
+            this.groupsButton.Margin = new System.Windows.Forms.Padding(0);
+            this.groupsButton.Name = "groupsButton";
+            this.groupsButton.Size = new System.Drawing.Size(150, 39);
+            this.groupsButton.TabIndex = 16;
+            this.groupsButton.Tag = "GROUPS";
+            this.groupsButton.Text = "Groups";
+            this.groupsButton.UseVisualStyleBackColor = false;
+            this.groupsButton.Click += new System.EventHandler(this.menuButton_Click);
+            // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 505);
+            this.ClientSize = new System.Drawing.Size(803, 410);
             this.Controls.Add(this.mainFlowLayoutPanel);
             this.Controls.Add(this.topFlowLayoutPanel);
             this.Controls.Add(this.leftFlowLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserForm";
             this.leftFlowLayoutPanel.ResumeLayout(false);
             this.leftFlowLayoutPanel.PerformLayout();
@@ -196,6 +238,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         private OvalPictureBox profileOvalPictureBox;
         private System.Windows.Forms.Button albumButton;
         private System.Windows.Forms.Button friendsButton;
+        private System.Windows.Forms.Button pagesButton;
+        private System.Windows.Forms.Button groupsButton;
     }
 }
 

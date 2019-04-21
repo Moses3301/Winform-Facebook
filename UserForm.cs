@@ -48,6 +48,12 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 case "FRIENDS":
                     loadFriends(m_User);
                     break;
+                case "PAGES":
+                    loadLikedPages(m_User);
+                    break;
+                case "GROUPS":
+                    loadGroups(m_User);
+                    break;
                 default:
                     break;
             }
@@ -90,7 +96,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             AlbumDownloader albumDownloader = new AlbumDownloader(albums);
             albumDownloader.Show();
         }
-
+        
         private void loadFriends(User i_User)
         {
             foreach (User friend in i_User.Friends)
@@ -116,6 +122,25 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
                 mainFlowLayoutPanel.Controls.Add(newAlbumUI);
             }
         }
+
+        private void loadLikedPages(User i_User)
+        {
+            foreach (Page page in i_User.LikedPages)
+            {
+                PageUI newPageUI = new PageUI(page);
+                mainFlowLayoutPanel.Controls.Add(newPageUI);
+            }
+        }
+
+        private void loadGroups(User i_User)
+        {
+            foreach (Group group in i_User.Groups)
+            {
+                GroupUI newGroupUI = new GroupUI(group);
+                mainFlowLayoutPanel.Controls.Add(newGroupUI);
+            }
+        }
+
         private void fetchUserInfo()
         {
             profileOvalPictureBox.LoadAsync(m_User.PictureNormalURL);
