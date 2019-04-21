@@ -45,3 +45,26 @@ C:\Users\Moses\Documents\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 
 C:\Users\Moses\Documents\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.CopyComplete
 C:\Users\Moses\Documents\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
 C:\Users\Moses\Documents\B19 Ex01 Matan 311116313 Moshe 305097453\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
+C:\Users\Matan\Desktop\Design Patterns\ex2\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe.config
+C:\Users\Matan\Desktop\Design Patterns\ex2\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
+C:\Users\Matan\Desktop\Design Patterns\ex2\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
+C:\Users\Matan\Desktop\Design Patterns\ex2\bin\Debug\Facebook.dll
+C:\Users\Matan\Desktop\Design Patterns\ex2\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojResolveAssemblyReference.cache
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDetails.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDownloader.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.GroupUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PageUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoIconWithCheckBox.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserDetails.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserForm.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostDetails.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserUI.resources
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.GenerateResource.Cache
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
+C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
