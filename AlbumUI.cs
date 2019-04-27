@@ -24,6 +24,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         public CheckBox CheckBox { get { return checkBox; } }
         private void fetchAlbumInfo()
         {
+            albumBindingSource.DataSource = m_Album;
         }
 
         private void coverPictureBox_Click(object sender, EventArgs e)
