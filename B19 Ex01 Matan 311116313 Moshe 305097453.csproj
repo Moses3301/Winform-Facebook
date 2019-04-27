@@ -91,6 +91,7 @@
     <Compile Include="GroupUI.Designer.cs">
       <DependentUpon>GroupUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoggedInUser.cs" />
     <Compile Include="PageUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
