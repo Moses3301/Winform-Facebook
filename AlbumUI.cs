@@ -24,9 +24,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         public CheckBox CheckBox { get { return checkBox; } }
         private void fetchAlbumInfo()
         {
-            coverPictureBox.LoadAsync(m_Album.PictureAlbumURL);
-            albumNameLabel.Text = m_Album.Name;
-            ItemsLabel.Text = m_Album.Photos.Count.ToString()+" Items";
         }
 
         private void coverPictureBox_Click(object sender, EventArgs e)
