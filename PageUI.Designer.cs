@@ -28,92 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageUI));
-            this.profileOvalPictureBox = new OvalPictureBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.NumberOfPeopleLabel = new System.Windows.Forms.Label();
-            this.peopleLikedThisText = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.pageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imageSmallPictureBox = new System.Windows.Forms.PictureBox();
+            this.nameLabel1 = new System.Windows.Forms.Label();
+            this.descriptionLabel1 = new System.Windows.Forms.Label();
+            this.likesCountLabel1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // profileOvalPictureBox
+            // pageBindingSource
             // 
-            this.profileOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
-            this.profileOvalPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profileOvalPictureBox.Image")));
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(15, 23);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(5);
-            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(121, 104);
-            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profileOvalPictureBox.TabIndex = 2;
-            this.profileOvalPictureBox.TabStop = false;
+            this.pageBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Page);
             // 
-            // nameLabel
+            // imageSmallPictureBox
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.nameLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.nameLabel.Location = new System.Drawing.Point(144, 23);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Padding = new System.Windows.Forms.Padding(10, 15, 0, 0);
-            this.nameLabel.Size = new System.Drawing.Size(97, 33);
-            this.nameLabel.TabIndex = 3;
-            this.nameLabel.Text = "Pagename";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.imageSmallPictureBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.imageSmallPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.pageBindingSource, "ImageSmall", true));
+            this.imageSmallPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.imageSmallPictureBox.Name = "imageSmallPictureBox";
+            this.imageSmallPictureBox.Size = new System.Drawing.Size(101, 104);
+            this.imageSmallPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imageSmallPictureBox.TabIndex = 2;
+            this.imageSmallPictureBox.TabStop = false;
             // 
-            // NumberOfPeopleLabel
+            // nameLabel1
             // 
-            this.NumberOfPeopleLabel.AutoSize = true;
-            this.NumberOfPeopleLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.NumberOfPeopleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NumberOfPeopleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumberOfPeopleLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.NumberOfPeopleLabel.Location = new System.Drawing.Point(144, 56);
-            this.NumberOfPeopleLabel.Name = "NumberOfPeopleLabel";
-            this.NumberOfPeopleLabel.Padding = new System.Windows.Forms.Padding(10, 15, 0, 0);
-            this.NumberOfPeopleLabel.Size = new System.Drawing.Size(152, 33);
-            this.NumberOfPeopleLabel.TabIndex = 4;
-            this.NumberOfPeopleLabel.Text = "Number of people";
-            this.NumberOfPeopleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.nameLabel1.BackColor = System.Drawing.SystemColors.Control;
+            this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pageBindingSource, "Name", true));
+            this.nameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nameLabel1.Location = new System.Drawing.Point(110, 3);
+            this.nameLabel1.Name = "nameLabel1";
+            this.nameLabel1.Size = new System.Drawing.Size(770, 26);
+            this.nameLabel1.TabIndex = 3;
+            this.nameLabel1.Text = "[NAME]";
             // 
-            // peopleLikedThisText
+            // descriptionLabel1
             // 
-            this.peopleLikedThisText.AutoSize = true;
-            this.peopleLikedThisText.Cursor = System.Windows.Forms.Cursors.Default;
-            this.peopleLikedThisText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.peopleLikedThisText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.peopleLikedThisText.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.peopleLikedThisText.Location = new System.Drawing.Point(302, 56);
-            this.peopleLikedThisText.Name = "peopleLikedThisText";
-            this.peopleLikedThisText.Padding = new System.Windows.Forms.Padding(10, 15, 0, 0);
-            this.peopleLikedThisText.Size = new System.Drawing.Size(181, 33);
-            this.peopleLikedThisText.TabIndex = 5;
-            this.peopleLikedThisText.Text = "people liked this page";
-            this.peopleLikedThisText.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.descriptionLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pageBindingSource, "Description", true));
+            this.descriptionLabel1.Location = new System.Drawing.Point(110, 29);
+            this.descriptionLabel1.Name = "descriptionLabel1";
+            this.descriptionLabel1.Size = new System.Drawing.Size(770, 23);
+            this.descriptionLabel1.TabIndex = 4;
+            this.descriptionLabel1.Text = "[DESCRIPTION]";
+            // 
+            // likesCountLabel1
+            // 
+            this.likesCountLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pageBindingSource, "LikesCount", true));
+            this.likesCountLabel1.Location = new System.Drawing.Point(112, 81);
+            this.likesCountLabel1.Name = "likesCountLabel1";
+            this.likesCountLabel1.Size = new System.Drawing.Size(43, 23);
+            this.likesCountLabel1.TabIndex = 5;
+            this.likesCountLabel1.Text = "[00]";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.thumbs_up;
+            this.pictureBox1.Location = new System.Drawing.Point(142, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // PageUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.peopleLikedThisText);
-            this.Controls.Add(this.NumberOfPeopleLabel);
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.profileOvalPictureBox);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.likesCountLabel1);
+            this.Controls.Add(this.descriptionLabel1);
+            this.Controls.Add(this.nameLabel1);
+            this.Controls.Add(this.imageSmallPictureBox);
             this.Name = "PageUI";
-            this.Size = new System.Drawing.Size(903, 150);
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
+            this.Size = new System.Drawing.Size(903, 111);
+            ((System.ComponentModel.ISupportInitialize)(this.pageBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private OvalPictureBox profileOvalPictureBox;
-        private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.Label NumberOfPeopleLabel;
-        private System.Windows.Forms.Label peopleLikedThisText;
+        private System.Windows.Forms.BindingSource pageBindingSource;
+        private System.Windows.Forms.PictureBox imageSmallPictureBox;
+        private System.Windows.Forms.Label nameLabel1;
+        private System.Windows.Forms.Label descriptionLabel1;
+        private System.Windows.Forms.Label likesCountLabel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

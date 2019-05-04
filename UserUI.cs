@@ -24,18 +24,15 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchUserInfo()
         {
-            profileOvalPictureBox.LoadAsync(m_User.PictureNormalURL);
-            nameLabel.Text = m_User.Name;
+            userBindingSource.DataSource = m_User;
         }
 
         User User { get { return m_User; } }
 
-        private void UserUI_Click(object sender, EventArgs e)
+        private void nameLabel1_Click(object sender, EventArgs e)
         {
             UserForm newWindow = new UserForm(m_User);
             newWindow.Show();
         }
-
-
     }
 }

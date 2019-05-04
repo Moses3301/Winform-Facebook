@@ -143,9 +143,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchUserInfo()
         {
-            profileOvalPictureBox.LoadAsync(m_User.PictureNormalURL);
-            userNameLabel.Text = m_User.Name;
-            this.Text = m_User.Name;
+            userBindingSource.DataSource = m_User;
         }
     }
 }

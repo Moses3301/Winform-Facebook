@@ -29,10 +29,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchPageInfo()
         {
-            profileOvalPictureBox.LoadAsync(m_Page.PictureLargeURL);
-            nameLabel.Text = m_Page.Name;
-            NumberOfPeopleLabel.Text = m_Page.LikesCount.ToString();
+            pageBindingSource.DataSource = m_Page;
         }
-
     }
 }

@@ -31,47 +31,12 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         }
         private void fetchPostInfo()
         {
-            User aouther = m_Post.From;
-            if (aouther == null)
+            postBindingSource.DataSource = m_Post;
+            if (m_Post.From != null)
             {
-                topFlowLayoutPanel.Hide();
+                this.imageSmallOvalPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.postBindingSource, "From.ImageSmall", true));
+                this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.postBindingSource, "From.Name", true));
             }
-            else
-            {
-                profileOvalPictureBox.LoadAsync(aouther.PictureNormalURL);
-                nameLabel.Text = aouther.Name;
-                dateLabel.Text = m_Post.CreatedTime.ToString();
-            }   
-            if (!string.IsNullOrEmpty(m_Post.Message))
-            {
-                Label msg = new Label();
-                msg.Text = m_Post.Message;
-                msg.AutoSize = true;
-                bodyFlowLayoutPanel.Controls.Add(msg);
-            }
-            Post post = m_Post as Post;
-            if (post != null)
-            {
-                if (!string.IsNullOrEmpty(post.PictureURL))
-                {
-                    PictureBox pic = new PictureBox();
-                    pic.LoadAsync(post.PictureURL);
-                    pic.SizeMode = PictureBoxSizeMode.AutoSize;
-                    bodyFlowLayoutPanel.Controls.Add(pic);
-                }
-                
-            }
-            Photo postPhoto = m_Post as Photo;
-            if (postPhoto != null)
-            {
-                   PictureBox pic = new PictureBox();
-                   pic.LoadAsync(postPhoto.PictureThumbURL);
-                   pic.SizeMode = PictureBoxSizeMode.AutoSize;
-                   bodyFlowLayoutPanel.Controls.Add(pic);
-            }
-            LikesLabel.Text = m_Post.LikedBy.Count.ToString();
-            commentsLabel.Text = m_Post.Comments.Count.ToString();
-            m_Post.PropertyChanged += Post_Change;
         }
         private void Post_Change(object sender, EventArgs e)
         {

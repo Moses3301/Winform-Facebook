@@ -13,6 +13,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 {
     public partial class PhotoUI : UserControl
     {
+        Photo m_Photo;
+
         public PhotoUI(Photo i_Photo)
         {
             InitializeComponent();
@@ -22,16 +24,13 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchPhotoDetails()
         {
-            pictureBox.LoadAsync(m_Photo.PictureNormalURL);
+            photoBindingSource.DataSource = m_Photo;
         }
 
-        Photo m_Photo;
-        private void pictureBox_Click(object sender, EventArgs e)
+        private void imageNormalPictureBox_Click(object sender, EventArgs e)
         {
             PostDetails postDetails = new PostDetails(m_Photo);
             postDetails.Show();
         }
-
-
     }
 }

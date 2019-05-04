@@ -28,56 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.profileOvalPictureBox = new OvalPictureBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
+            this.components = new System.ComponentModel.Container();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameLabel1 = new System.Windows.Forms.Label();
+            this.statusesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imageSmallOvalPictureBox = new OvalPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallOvalPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // profileOvalPictureBox
+            // userBindingSource
             // 
-            this.profileOvalPictureBox.BackColor = System.Drawing.Color.SlateGray;
-            this.profileOvalPictureBox.InitialImage = null;
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(34, 2);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(68, 72);
-            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profileOvalPictureBox.TabIndex = 0;
-            this.profileOvalPictureBox.TabStop = false;
-            //this.profileOvalPictureBox.Click += new System.EventHandler(this.profileOvalPictureBox_Click);
+            this.userBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.User);
             // 
-            // nameLabel
+            // nameLabel1
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.ForeColor = System.Drawing.Color.Navy;
-            this.nameLabel.Location = new System.Drawing.Point(2, 84);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(145, 19);
-            this.nameLabel.TabIndex = 1;
-            this.nameLabel.Text = "firstname lastname";
+            this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Name", true));
+            this.nameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nameLabel1.Location = new System.Drawing.Point(63, 14);
+            this.nameLabel1.Name = "nameLabel1";
+            this.nameLabel1.Size = new System.Drawing.Size(269, 37);
+            this.nameLabel1.TabIndex = 3;
+            this.nameLabel1.Text = "[NAME]";
+            this.nameLabel1.Click += new System.EventHandler(this.nameLabel1_Click);
+            // 
+            // statusesBindingSource
+            // 
+            this.statusesBindingSource.DataMember = "Statuses";
+            this.statusesBindingSource.DataSource = this.userBindingSource;
+            // 
+            // imageSmallOvalPictureBox
+            // 
+            this.imageSmallOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
+            this.imageSmallOvalPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.userBindingSource, "ImageSmall", true));
+            this.imageSmallOvalPictureBox.Location = new System.Drawing.Point(3, 3);
+            this.imageSmallOvalPictureBox.Name = "imageSmallOvalPictureBox";
+            this.imageSmallOvalPictureBox.Size = new System.Drawing.Size(54, 57);
+            this.imageSmallOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imageSmallOvalPictureBox.TabIndex = 2;
+            this.imageSmallOvalPictureBox.TabStop = false;
             // 
             // UserUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.profileOvalPictureBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.nameLabel1);
+            this.Controls.Add(this.imageSmallOvalPictureBox);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserUI";
-            this.Size = new System.Drawing.Size(147, 107);
-            this.Click += new System.EventHandler(this.UserUI_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
+            this.Size = new System.Drawing.Size(340, 64);
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallOvalPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private OvalPictureBox profileOvalPictureBox;
-        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.BindingSource userBindingSource;
+        private OvalPictureBox imageSmallOvalPictureBox;
+        private System.Windows.Forms.Label nameLabel1;
+        private System.Windows.Forms.BindingSource statusesBindingSource;
     }
 }
