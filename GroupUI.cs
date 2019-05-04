@@ -28,9 +28,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
 
         private void fetchGroupInfo()
         {
-            profileOvalPictureBox.LoadAsync(m_Group.PictureLargeURL);
-            nameLabel.Text = m_Group.Name;
-
+            groupBindingSource.DataSource = m_Group;
         }
 
         private void watch_members_click(object sender, EventArgs e)

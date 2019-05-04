@@ -28,43 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupUI));
-            this.profileOvalPictureBox = new OvalPictureBox();
-            this.nameLabel = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
             this.watchMembersButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).BeginInit();
+            this.groupBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.imageSmallOvalPictureBox = new OvalPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallOvalPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // profileOvalPictureBox
-            // 
-            this.profileOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
-            this.profileOvalPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("profileOvalPictureBox.Image")));
-            this.profileOvalPictureBox.Location = new System.Drawing.Point(15, 23);
-            this.profileOvalPictureBox.Margin = new System.Windows.Forms.Padding(5);
-            this.profileOvalPictureBox.Name = "profileOvalPictureBox";
-            this.profileOvalPictureBox.Size = new System.Drawing.Size(121, 104);
-            this.profileOvalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.profileOvalPictureBox.TabIndex = 3;
-            this.profileOvalPictureBox.TabStop = false;
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.nameLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.nameLabel.Location = new System.Drawing.Point(144, 23);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Padding = new System.Windows.Forms.Padding(10, 15, 0, 0);
-            this.nameLabel.Size = new System.Drawing.Size(109, 33);
-            this.nameLabel.TabIndex = 4;
-            this.nameLabel.Text = "GroupName";
-            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // watchMembersButton
             // 
-            this.watchMembersButton.Location = new System.Drawing.Point(158, 70);
+            this.watchMembersButton.Location = new System.Drawing.Point(84, 58);
             this.watchMembersButton.Name = "watchMembersButton";
             this.watchMembersButton.Size = new System.Drawing.Size(95, 23);
             this.watchMembersButton.TabIndex = 5;
@@ -72,25 +48,61 @@
             this.watchMembersButton.UseVisualStyleBackColor = true;
             this.watchMembersButton.Click += new System.EventHandler(this.watch_members_click);
             // 
+            // groupBindingSource
+            // 
+            this.groupBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.Group);
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.groupBindingSource, "Name", true));
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nameLabel.Location = new System.Drawing.Point(80, 3);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(100, 23);
+            this.nameLabel.TabIndex = 7;
+            this.nameLabel.Text = "[NAME]";
+            // 
+            // descriptionLabel
+            // 
+            this.descriptionLabel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.groupBindingSource, "Description", true));
+            this.descriptionLabel.Location = new System.Drawing.Point(81, 26);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(718, 29);
+            this.descriptionLabel.TabIndex = 8;
+            this.descriptionLabel.Text = "[description]";
+            // 
+            // imageSmallOvalPictureBox
+            // 
+            this.imageSmallOvalPictureBox.BackColor = System.Drawing.Color.DarkGray;
+            this.imageSmallOvalPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.groupBindingSource, "ImageSmall", true));
+            this.imageSmallOvalPictureBox.Location = new System.Drawing.Point(7, 3);
+            this.imageSmallOvalPictureBox.Name = "imageSmallOvalPictureBox";
+            this.imageSmallOvalPictureBox.Size = new System.Drawing.Size(71, 65);
+            this.imageSmallOvalPictureBox.TabIndex = 9;
+            this.imageSmallOvalPictureBox.TabStop = false;
+            // 
             // GroupUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.watchMembersButton);
+            this.Controls.Add(this.imageSmallOvalPictureBox);
+            this.Controls.Add(this.descriptionLabel);
             this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.profileOvalPictureBox);
+            this.Controls.Add(this.watchMembersButton);
             this.Name = "GroupUI";
-            this.Size = new System.Drawing.Size(910, 150);
-            ((System.ComponentModel.ISupportInitialize)(this.profileOvalPictureBox)).EndInit();
+            this.Size = new System.Drawing.Size(910, 88);
+            ((System.ComponentModel.ISupportInitialize)(this.groupBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSmallOvalPictureBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private OvalPictureBox profileOvalPictureBox;
-        private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button watchMembersButton;
+        private System.Windows.Forms.BindingSource groupBindingSource;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label descriptionLabel;
+        private OvalPictureBox imageSmallOvalPictureBox;
     }
 }
