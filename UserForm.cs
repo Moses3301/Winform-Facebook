@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using B19_Ex01_Matan_311116313_Moshe_305097453.PostUI;
 
 namespace B19_Ex01_Matan_311116313_Moshe_305097453
 {
@@ -18,10 +19,12 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         {
             InitializeComponent();
             m_User = i_User;
+            m_PostFactory = new PostUI.PostFactory.PostFactory();
             fetchUserInfo();
         }
 
         private User m_User;
+        private PostUI.PostFactory.PostFactory m_PostFactory;
 
         private void menuButton_Click(object sender, EventArgs e)
         {
@@ -110,8 +113,8 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         {
             foreach (Post post in i_User.NewsFeed)
             {
-                PostUI newPostUI = new PostUI(post);
-                mainFlowLayoutPanel.Controls.Add(newPostUI);
+                PostUI.PostUI postui = m_PostFactory.createUI(post);
+                mainFlowLayoutPanel.Controls.Add(postui);
             }
         }
         private void loadAlbums(User i_User)

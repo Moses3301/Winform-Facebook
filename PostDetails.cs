@@ -23,12 +23,12 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         PostedItem m_Post;
         private void fetchComments()
         {
-            PostUI post = new PostUI(m_Post);
+            PostUI.PostUI post = new PostUI.PostUI(m_Post);
             topPanel.Controls.Add(post);
             post.Dock = DockStyle.Fill;
             foreach (Comment comment in m_Post.Comments)
             {
-                PostUI newComment = new PostUI(comment);
+                PostUI.PostUI newComment = new PostUI.PostUI(comment);
                 mainFlowLayoutPanel.Controls.Add(newComment);
             }
         }

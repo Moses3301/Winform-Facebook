@@ -97,7 +97,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.homeButton.Size = new System.Drawing.Size(150, 56);
             this.homeButton.TabIndex = 12;
             this.homeButton.Tag = "HOME";
-            this.homeButton.Text = global::B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.home;
+            this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = false;
             this.homeButton.Click += new System.EventHandler(this.menuButton_Click);
             // 

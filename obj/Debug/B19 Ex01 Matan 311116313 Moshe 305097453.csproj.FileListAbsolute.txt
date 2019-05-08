@@ -68,31 +68,6 @@ C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19_Ex01_Matan_311116313_Mo
 C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.GenerateResource.Cache
 C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
 C:\Users\Matan\Desktop\Design Patterns\ex2\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
-C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe.config
-C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
-C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
-C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\Facebook.dll
-C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\FbGraphApiWrapper.dll
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDetails.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDownloader.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.GroupUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PageUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoIconWithCheckBox.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserDetails.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserForm.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostDetails.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserUI.resources
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.GenerateResource.cache
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.CoreCompileInputs.cache
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.CopyComplete
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
-C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe.config
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
@@ -118,3 +93,31 @@ C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
+C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe.config
+C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
+C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
+C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\Facebook.dll
+C:\Users\Moses\Documents\Winform-Facebook-master\bin\Debug\FbGraphApiWrapper.dll
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDetails.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumDownloader.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.AlbumUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.GroupUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PageUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoIconWithCheckBox.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.VideoPostUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserDetails.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserForm.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostDetails.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.PostUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.GenerateResource.cache
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.CoreCompileInputs.cache
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csproj.CopyComplete
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.exe
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.pdb
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.PhotoPostUI.resources
+C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.CheckInPostUI.resources

@@ -54,8 +54,11 @@
     <Reference Include="FbGraphApiWrapper">
       <HintPath>V6.8.0.17\FbGraphApiWrapper.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +68,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlbumDetails.cs">
@@ -104,6 +108,25 @@
     <Compile Include="PhotoIconWithCheckBox.Designer.cs">
       <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostUI\CheckInPostUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostUI\CheckInPostUI.Designer.cs">
+      <DependentUpon>CheckInPostUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostUI\PhotoPostUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostUI\PhotoPostUI.Designer.cs">
+      <DependentUpon>PhotoPostUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostUI\PostFactory\PostFactory.cs" />
+    <Compile Include="PostUI\VideoPostUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PostUI\VideoPostUI.Designer.cs">
+      <DependentUpon>VideoPostUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,10 +154,10 @@
     <Compile Include="PostDetails.Designer.cs">
       <DependentUpon>PostDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="PostUI.cs">
+    <Compile Include="PostUI\PostUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PostUI.Designer.cs">
+    <Compile Include="PostUI\PostUI.Designer.cs">
       <DependentUpon>PostUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -169,6 +192,15 @@
     <EmbeddedResource Include="PhotoIconWithCheckBox.resx">
       <DependentUpon>PhotoIconWithCheckBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PostUI\CheckInPostUI.resx">
+      <DependentUpon>CheckInPostUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostUI\PhotoPostUI.resx">
+      <DependentUpon>PhotoPostUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostUI\VideoPostUI.resx">
+      <DependentUpon>VideoPostUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserDetails.resx">
       <DependentUpon>UserDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,7 +213,7 @@
     <EmbeddedResource Include="PostDetails.resx">
       <DependentUpon>PostDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PostUI.resx">
+    <EmbeddedResource Include="PostUI\PostUI.resx">
       <DependentUpon>PostUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -201,11 +233,13 @@
       <DependentUpon>UserUI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Album.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Checkin.datasource" />
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Group.datasource" />
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Page.datasource" />
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Photo.datasource" />
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Post.datasource" />
     <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.User.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Video.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -239,6 +273,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
