@@ -27,7 +27,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             userBindingSource.DataSource = m_User;
         }
 
-        User User { get { return m_User; } }
+        public User User { get { return m_User; } }
 
         private void nameLabel1_Click(object sender, EventArgs e)
         {

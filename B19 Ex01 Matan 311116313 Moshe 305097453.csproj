@@ -127,6 +127,7 @@
     <Compile Include="PostUI\VideoPostUI.Designer.cs">
       <DependentUpon>VideoPostUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="SortStrategy.cs" />
     <Compile Include="UserDetails.cs">
       <SubType>Form</SubType>
     </Compile>

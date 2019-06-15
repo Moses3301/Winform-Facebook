@@ -83,7 +83,6 @@ C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserForm.resources
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PhotoUI.resources
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostDetails.resources
-C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.resources
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.Properties.Resources.resources
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.SubmitTexBox.resources
 C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.UserUI.resources
@@ -121,3 +120,7 @@ C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116
 C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19 Ex01 Matan 311116313 Moshe 305097453.csprojAssemblyReference.cache
 C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.PhotoPostUI.resources
 C:\Users\Moses\Documents\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.CheckInPostUI.resources
+C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.CheckInPostUI.resources
+C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.PhotoPostUI.resources
+C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.VideoPostUI.resources
+C:\Users\Moses\Documents\Visual Studio 2017\Projects\Winform-Facebook-master\obj\Debug\B19_Ex01_Matan_311116313_Moshe_305097453.PostUI.PostUI.resources

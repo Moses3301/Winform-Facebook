@@ -42,16 +42,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel.Controls.Add(this.textBox);
             this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(461, 41);
+            this.panel.Size = new System.Drawing.Size(346, 33);
             this.panel.TabIndex = 0;
             // 
             // textBox
             // 
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox.Location = new System.Drawing.Point(0, 0);
+            this.textBox.Margin = new System.Windows.Forms.Padding(2);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(461, 22);
+            this.textBox.Size = new System.Drawing.Size(346, 20);
             this.textBox.TabIndex = 0;
             this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
@@ -59,9 +61,10 @@
             // 
             this.panel2.Controls.Add(this.submitButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(464, 0);
+            this.panel2.Location = new System.Drawing.Point(348, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(118, 42);
+            this.panel2.Size = new System.Drawing.Size(88, 34);
             this.panel2.TabIndex = 1;
             // 
             // submitButton
@@ -72,8 +75,9 @@
             this.submitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitButton.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.submitButton.Location = new System.Drawing.Point(0, 0);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(2);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(118, 39);
+            this.submitButton.Size = new System.Drawing.Size(88, 32);
             this.submitButton.TabIndex = 0;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = false;
@@ -81,12 +85,13 @@
             // 
             // SubmitTexBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SubmitTexBox";
-            this.Size = new System.Drawing.Size(582, 42);
+            this.Size = new System.Drawing.Size(436, 34);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             this.panel2.ResumeLayout(false);

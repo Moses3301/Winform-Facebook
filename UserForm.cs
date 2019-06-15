@@ -102,11 +102,76 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
         
         private void loadFriends(User i_User)
         {
+            sortFreindsInit();
             foreach (User friend in i_User.Friends)
             {
                 UserUI newUserUI = new UserUI(friend);
                 mainFlowLayoutPanel.Controls.Add(newUserUI);
             }
+        }
+
+        private void sortFreindsInit()
+        {
+            Label sortByLabel = new Label();
+            sortByLabel.Text = "SortBy";
+            topFlowLayoutPanel.Controls.Add(sortByLabel);
+            ComboBox sortComboBox = new ComboBox();
+            sortComboBox.Items.AddRange(new object[] {
+            "Age",
+            "Name",
+            "Friends",
+            "Genger"});
+            SortStrategy<UserUI> sortStrategy = new SortStrategy<UserUI>();
+            {
+                List<UserUI> users = new List<UserUI>();
+                foreach (UserUI user in mainFlowLayoutPanel.Controls)
+                {
+                    users.Add(user);
+                    mainFlowLayoutPanel.Controls.Remove(user);
+                }
+
+                switch (sortComboBox.SelectedText)
+                {
+                    case "Name":
+                        sortStrategy.SetComperElements((user_x,user_y) => {
+                            if (user_x.User.Name.ToString().CompareTo(user_y.User.Name.ToString()) == -1)
+                                return true;
+                            else
+                                return false;
+                        });
+                        break;
+                    case "Age":
+                        sortStrategy.SetComperElements((user_x, user_y) => {
+                            if (user_x.User.Birthday.ToString().TrimEnd('-').CompareTo(user_y.User.Birthday.ToString().TrimEnd('-')) == -1)
+                                return true;
+                            else
+                                return false;
+                        });
+                        break;
+                    case "Gender":
+                        sortStrategy.SetComperElements((user_x, user_y) => {
+                            if (user_x.User.Gender.Value.Equals("male") && user_x.User.Gender.Value.Equals("female"))
+                                return true;
+                            else
+                                return false;
+                        });
+                        break;
+                    case "Friends":
+                        sortStrategy.SetComperElements((user_x, user_y) => {
+                            return (user_x.User.FriendLists.Count < user_y.User.FriendLists.Count);
+                        });
+                        break;
+                    case "Statuses Number":
+                        sortStrategy.SetComperElements((user_x, user_y) => {
+                            return (user_x.User.Statuses.Count < user_y.User.Statuses.Count);
+                        });
+                        break;
+                    default:
+                        break;
+                }
+                mainFlowLayoutPanel.Controls.AddRange(sortStrategy.Sort(users).ToArray());
+            };
+
         }
 
         private void loadWallPosts(User i_User)

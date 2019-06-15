@@ -34,6 +34,7 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.leftFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.imageSmallOvalPictureBox = new OvalPictureBox();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nameLabel1 = new System.Windows.Forms.Label();
             this.homeButton = new System.Windows.Forms.Button();
             this.albumButton = new System.Windows.Forms.Button();
             this.friendsButton = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.groupsButton = new System.Windows.Forms.Button();
             this.topFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.mainFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.nameLabel1 = new System.Windows.Forms.Label();
             this.leftFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageSmallOvalPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
@@ -81,6 +81,21 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             // userBindingSource
             // 
             this.userBindingSource.DataSource = typeof(FacebookWrapper.ObjectModel.User);
+            // 
+            // nameLabel1
+            // 
+            this.nameLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nameLabel1.AutoSize = true;
+            this.nameLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Name", true));
+            this.nameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nameLabel1.Location = new System.Drawing.Point(47, 66);
+            this.nameLabel1.Name = "nameLabel1";
+            this.nameLabel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.nameLabel1.Size = new System.Drawing.Size(55, 26);
+            this.nameLabel1.TabIndex = 1;
+            this.nameLabel1.Text = "[NAME]";
             // 
             // homeButton
             // 
@@ -200,21 +215,6 @@ namespace B19_Ex01_Matan_311116313_Moshe_305097453
             this.mainFlowLayoutPanel.Size = new System.Drawing.Size(653, 328);
             this.mainFlowLayoutPanel.TabIndex = 2;
             this.mainFlowLayoutPanel.WrapContents = false;
-            // 
-            // nameLabel1
-            // 
-            this.nameLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nameLabel1.AutoSize = true;
-            this.nameLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.nameLabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Name", true));
-            this.nameLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nameLabel1.Location = new System.Drawing.Point(47, 66);
-            this.nameLabel1.Name = "nameLabel1";
-            this.nameLabel1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.nameLabel1.Size = new System.Drawing.Size(55, 26);
-            this.nameLabel1.TabIndex = 1;
-            this.nameLabel1.Text = "[NAME]";
             // 
             // UserForm
             // 
